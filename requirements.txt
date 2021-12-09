@@ -1,1 +1,4 @@
-django~=2.2
+django~=3.2.9
+neo4j-driver==4.3.6
+neomodel==4.0.7
+django_neomodel==0.0.7
