@@ -90,10 +90,7 @@ WSGI_APPLICATION = 'Demo.wsgi.application'
 #Connect to Neo4j Database
 # NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:password@localhost:7687')
 
-NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'neo4j+s://neo4j:Dmjt3WdOPWtYUd8ysRklXs6obJrT72DuEPb3RkpJUko@neo4j-a51ead58-d110b3c6-instance.production-orch-0065.neo4j.io:7687')
 
-# uri = "bolt://127.0.0.1:7687"
-# driver = GraphDatabase.driver(uri, auth=("neo4j", "Dmjt3WdOPWtYUd8ysRklXs6obJrT72DuEPb3RkpJUko"))
 
 
 # Database
