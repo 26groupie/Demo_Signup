@@ -21,13 +21,13 @@ urlpatterns = [
              extra_context=
              {
                  'title': 'Log in',
-                 'year' : datetime.now().year,
+                 'year': datetime.now().year,
              }
          ),
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
-    path('register/', v.register, name= 'register'),
+    path('register/', v.register, name='register'),
  
    
 

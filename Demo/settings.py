@@ -35,19 +35,22 @@ ALLOWED_HOSTS = []
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
 INSTALLED_APPS = [
-    'app',
     # Add your apps here to enable them
+    # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 3rd party apps
     'crispy_forms',
-    'register.apps.registerConfig',
     'django_neomodel',
-    
-    
+
+    # application pages
+    'app',
+    'register.apps.registerConfig',
 ]
 
 # Middleware framework
@@ -85,7 +88,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Demo.wsgi.application'
 
 #Connect to Neo4j Database
-NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:password@localhost:7687')
+# NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:password@localhost:7687')
+
+
+
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
