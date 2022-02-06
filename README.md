@@ -165,7 +165,6 @@ Option 2: Using the terminal
 
 3. The packages should be installed
 ```
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
