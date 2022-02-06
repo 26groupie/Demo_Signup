@@ -126,6 +126,45 @@ This is an example of how to list things you need to use the software and how to
 4. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';
+   
+### Creating a virtual environment
+
+Option 1: Use an IDE (Similar setup depending on the IDE)
+
+```
+In Pycharm (example of setup):
+
+1. Go to File Settings
+
+2. In the Python Interpreter tab, click the gear Icon
+
+3. Click Add (new interpreter)
+
+4. On the virtual environment page, click to create a new environment
+* Keep the project location as the base project filepath
+* Make sure to use the Python source your Operating System is using
+** If you have multiple installations of Python, use "where python" in your terminal to find the correct file location
+* Keep inheritance and availability unchecked, since it's better to go on a project by project basis
+
+5. Click OK
+
+6. You should be good to run the application afterwards
+* note: if your installation is using any version of Django 4.0, then the dependencies will be broken and conflict.
+```
+
+Option 2: Using the terminal
+
+```
+1. Open up the terminal to the base level of the project folder
+
+2. Type the following commands
+* python(python3) -m venv venv
+* source venv/bin/activate (Unix OS)
+** venv/bin/activate (Windows)
+* pip install -r requirements.txt
+
+3. The packages should be installed
+```
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
